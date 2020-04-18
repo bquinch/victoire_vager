@@ -3,9 +3,9 @@ const navColor = () => {
   let position = 0
   window.addEventListener('scroll', (event) => {
     position = window.scrollY
-    if (position > 729) {
+    if (position > 1126) {
       navbar.classList.remove('bg-orange')
-    } if (position < 729) {
+    } if (position < 1126) {
       navbar.classList.add('bg-orange')
     }
   })
