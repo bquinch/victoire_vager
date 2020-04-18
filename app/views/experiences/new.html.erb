@@ -11,6 +11,7 @@
         <%= f.input :role, placeholder: "Poste tenu", label: false %>
         <%= f.input :category, placeholder: "Quel type d'experience ?", label: false,
           collection: %w[Travail Études Bénévolat] %>
+        <%= f.input :company_logo_url, placeholder: "Url du logo", label: false %>
         <%= f.input :current, label: "Poste actuel ?" %>
         <%= f.input :start_date, as: :string, placeholder: 'Date de début', input_html: { class: "datepicker" }, label: false %>
         <%= f.input :end_date, as: :string, placeholder: 'Date de fin', input_html: { class: "datepicker" }, label: false %>
