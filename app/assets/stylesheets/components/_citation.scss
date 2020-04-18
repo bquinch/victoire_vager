@@ -1,0 +1,18 @@
+.citation-victoire {
+
+}
+
+.citation-texte {
+  color: #555;
+  font-style: italic;
+}
+
+.citation-auteur {
+  color: $red;
+}
+
+@media (max-width: 500px) {
+  .citation-victoire {
+    display: none;
+  }
+}

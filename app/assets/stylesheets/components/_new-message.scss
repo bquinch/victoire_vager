@@ -14,12 +14,12 @@
   font-size: 1rem;
   color: rgba(0,0,0,0.7);
   text-align: start;
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid $red;
 }
 
 .form-control {
   border: none;
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid $red;
   background: none;
 
   &::placeholder {
@@ -28,14 +28,14 @@
 
   &:focus {
     border: none;
-    border-bottom: 1px solid $orange;
+    border-bottom: 1px solid $red;
     background: none;
     box-shadow: none;
   }
 }
 
 .contact-container {
-  background-color: $yellow;
+  background-color: $green;
 }
 
 @media(max-width: 902px) {

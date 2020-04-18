@@ -1,76 +1,78 @@
 Experience.destroy_all
 
-Experience.create(
-  start_date: Date.new(2018,1,1),
-  end_date: Date.new,
-  current: true,
-  company: 'Capgemini',
+Experience.create!(
+  start_date: Date.new(2019,7,1),
+  end_date: Date.new(2019,11,1),
+  current: false,
+  company: 'Association Valentin Haüy',
   category: 'Travail',
-  role: 'Responsable communication interne - pôle éditorial',
-  description: 'Responsable des contenus éditoriaux pour la communication interne France : intranet, campagnes internes, newsletters, magazine interne, etc.',
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C510BAQFoHzR2wowTgQ/company-logo_200_200/0?e=1590624000&v=beta&t=kXSCEOUQRkH_0XBIRPKm_sSlx9arvF3xtC7XAl-SKZA'
+  role: 'Chargée de communication',
+  description: "Mise en place de stratégies réseaux sociaux \nCréation de contenu audio (podcast)\nRédaction d’articles pour le trimestiel Valentin Haüy Actualités et le site internet de l’association\nSuivi du budget\nRédaction, diffusion et suivi de communiqués presse",
+  company_logo_url: 'https://pbs.twimg.com/profile_images/783299460218626048/dfNVHEAh_400x400.jpg'
 )
 
-Experience.create(
-  start_date: Date.new(2011,7,1),
-  end_date: Date.new(2017,12,1),
+Experience.create!(
+  start_date: Date.new(2018,2,1),
+  end_date: Date.new(2019,6,1),
   current: false,
-  company: 'Capgemini',
+  company: 'Lush',
   category: 'Travail',
-  role: 'Responsable communication interne',
-  description: 'Sous la direction du directeur du marketing et de la communication France et au sein d’une équipe de 2 personnes assurer :
-- la définition et la mise en œuvre du plan de communication interne de l’entité Application Services France,
-- la coordination des campagnes internes France
-- la déclinaison au niveau local des campagnes du groupe Capgemini,
-dans le triple objectif d’informer, engager et fédérer les 7 000 collaborateurs d’Application Services France et les 23 000 collaborateurs France.',
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C510BAQFoHzR2wowTgQ/company-logo_200_200/0?e=1590624000&v=beta&t=kXSCEOUQRkH_0XBIRPKm_sSlx9arvF3xtC7XAl-SKZA'
+  role: 'Conseil Client - Supervisor',
+  description: "Vente et conseils, animation boutique, gestion de la caisse, ouverture et fermeture magasin, management des équipes de ventes.",
+  company_logo_url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/67824815_1256452447849853_4780886529931214848_o.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=YEaYma_oL6cAX_YUtUq&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=4992f9e8407b9d75e9aee3f03deddcdc&oe=5EC1F98A'
 )
 
-Experience.create(
-  start_date: Date.new(2008,9,1),
-  end_date: Date.new(2009,9,1),
+Experience.create!(
+  start_date: Date.new(2012,10,1),
+  end_date: Date.new(2015,2,1),
   current: false,
-  company: 'Capgemini',
+  company: 'Lush',
   category: 'Travail',
-  role: 'Stagiaire communication',
-  description: "Alimentation de la section \"magazine\" de l'intranet de Capgemini France : veille éditoriale, traduction, réécriture, mise en page. (1 article par jour)
-  Refonte de l'extranet du groupe Capgemini",
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C510BAQFoHzR2wowTgQ/company-logo_200_200/0?e=1590624000&v=beta&t=kXSCEOUQRkH_0XBIRPKm_sSlx9arvF3xtC7XAl-SKZA'
+  role: 'Visual Merchandiser',
+  description: "Mise en place de stratégies, plannings et outils de développement au sein de l’équipe merchandising LUSH \nFormation et développement des équipes de ventes\nRédaction de rapports détaillants l’état des boutiques\nRespect des normes merchandising LUSH au sein de 40 boutiques",
+  company_logo_url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/67824815_1256452447849853_4780886529931214848_o.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=YEaYma_oL6cAX_YUtUq&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=4992f9e8407b9d75e9aee3f03deddcdc&oe=5EC1F98A'
 )
 
-Experience.create(
-  start_date: Date.new(2008,9,1),
-  end_date: Date.new(2009,6,1),
+Experience.create!(
+  start_date: Date.new(2012,3,1),
+  end_date: Date.new(2012,9,1),
   current: false,
-  company: 'Université Paris 13',
-  category: 'Études',
-  role: "Master 1 Métiers de l'information et de la communication - Mention Très Bien",
-  description: "Mémoire en analyse du discours : La réécriture des articles de l'intranet de Capgemini
-  Activités et associations : Organisation d'un concert de musique classique avec le service culturel de l'université",
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C560BAQGOqph9-sp_8g/company-logo_200_200/0?e=1590624000&v=beta&t=id1dChBUDz7icmxsBXkfuCIb0Uq71ucPLc4Njh9Z1kc'
+  company: 'Fred & Farid',
+  category: 'Travail',
+  role: 'Community Manager',
+  description: "Animation et développement de stratégies de quatre pages Facebook \nSélection de bloggeurs et journalistes “food” pour différents événements autour du groupe BONGRAIN (analyse de profils, prises de contact, négociations) \nMise en place de concours Facebook (plannings, budgets) et chroniques de food pour la marque CORAYA (goodies, concours) \nProspection presse et veille concurrentielle",
+  company_logo_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/FF_GROUP_logo.jpg/280px-FF_GROUP_logo.jpg'
 )
 
-Experience.create(
-  start_date: Date.new(2005,9,1),
-  end_date: Date.new(2007,6,1),
+Experience.create!(
+  start_date: Date.new(2011,1,1),
+  end_date: Date.new(2011,4,1),
   current: false,
-  company: 'Université Paris-Sorbonne',
-  category: 'Études',
-  role: "Master 2 (M2) Lettres classiques - Mention Très Bien",
-  description: "Mémoire de Master 1 : 'Je sais aimer qui m'aime, haïr mon ennemi : une morale en question dans la poésie grecque archaïque'
-Mémoire de Master 2 : L'amitié et la haine en question dans les tragédies de Sophocle",
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C560BAQH2kFzReYoR-A/company-logo_200_200/0?e=1590624000&v=beta&t=MzDF4GK8E5YBQj_noGRCUt_fgGFv3LrPmKn7Yez7WDI'
+  company: 'Marcel',
+  category: 'Travail',
+  role: 'Community Manager',
+  description: "Animation de la page Facebook (création de contenus) \nMise en place et suivi de jeux concours (plannings, budgets) \nRédaction de reportings mensuels et hebdomadaires",
+  company_logo_url: 'https://lh3.googleusercontent.com/proxy/HRYWahhdO0SCJRmE3eu0O0cGXYnadSxoUQ3WhJYixEAhv-wo8455WrIQY3xJyhzLCplEiZ7ALkm7GV6yyUkbEEIcI5EDjgup7B_MsDUd0-LMEpElMg7EBHiHWOQ'
 )
 
-Experience.create(
-  start_date: Date.new(2015,9,1),
-  end_date: Date.new(2017,6,1),
+Experience.create!(
+  start_date: Date.new(2010,2,1),
+  end_date: Date.new(2010,8,1),
   current: false,
-  company: 'COGE Musique en Grandes Ecoles',
-  role: "Responsable communications",
-  category: 'Bénévolat',
-  description: "Réalisations des supports de promotion graphique des concerts de l'association : créa, brief graphique, PAO, commande des impressions.
-  Rédaction et mise en page de newsletters internes pour les 350 membres de l'association, afin de les tenir informés mensuellement de l'actualité des différentes formations au sein du COGE.",
-  company_logo_url: 'https://media-exp1.licdn.com/dms/image/C560BAQH2kFzReYoR-A/company-logo_200_200/0?e=1590624000&v=beta&t=MzDF4GK8E5YBQj_noGRCUt_fgGFv3LrPmKn7Yez7WDI'
+  company: 'Lenôtre',
+  category: 'Travail',
+  role: 'Assistante Marketing',
+  description: "Valorisation de l’image grâce à la réalisation d’un cahier des charges boutiques \nDéveloppement d’un service « Drive-in By Lenôtre » \nProspection presse et veille concurrentielle \nStandard téléphonique \nProspection presse et veille concurrentielle \nMise en place d’une ligne de plateaux repas développement durable \nÉlaboration de rétro plannings « Ambition 2012 »",
+  company_logo_url: "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/15663/GastonLeno%CC%82tre_google.png"
 )
 
+Experience.create!(
+  start_date: Date.new(2008,7,1),
+  end_date: Date.new(2008,12,1),
+  current: false,
+  company: 'Café de la paix / Intercontinental',
+  category: 'Travail',
+  role: 'Commis de cuisine',
+  description: "Poste froid / entrée \nPoste banquetting froid et chaud \nPâtisserie",
+  company_logo_url: 'https://www.lhotellerie-restauration.fr/journal/hotellerie/2014-05/img/cafe-paix.jpg'
+)

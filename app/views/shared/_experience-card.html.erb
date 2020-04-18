@@ -14,7 +14,11 @@
     <div class="experience-card__right">
       <h1 class='experience-card__right__company'><%= @experience.company %></h1>
       <p class='experience-card__right__role'><em><%= @experience.role %></em></p>
-      <p class='experience-card__right__description'><%= @experience.description %></p>
+      <ul>
+        <% @experience.description.split("\n").each do |description| %>
+          <p class='experience-card__right__description text-justify'><li><%= description %></li></p>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

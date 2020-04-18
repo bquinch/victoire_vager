@@ -1,4 +1,4 @@
-.banner-violaine {
+.banner-victoire {
   height: calc(100vh - 50px);
   background-size: 40%;
   background-repeat: no-repeat;
@@ -9,11 +9,11 @@
 
 .banner-color {
   height: calc(100vh - 50px);
-  background-color: $orange;
+  background-color: $green;
   z-index: -1;
 }
 
-.banner-violaine__title {
+.banner-victoire__title {
   padding: 20% 0px;
 
   h1 {
@@ -27,37 +27,43 @@
 }
 
 @media(max-width: 540px) {
-  .banner-violaine__title {
+  .banner-victoire__title {
     padding: 50% 0px;
   }
 
-  .banner-violaine {
+  .banner-victoire {
     background-size: 100%;
+  }
+
+  .banner-victoire-content {
+    justify-content: flex-end !important;
   }
 }
 
+
+
 @media(max-width: 755px) and (min-width: 541px){
-  .banner-violaine__title {
+  .banner-victoire__title {
     padding: 40% 0px;
   }
 
-  .banner-violaine {
+  .banner-victoire {
     background-size: 85%;
   }
 }
 
 @media(max-width: 1140px) and (min-width: 961px) {
-  .banner-violaine {
+  .banner-victoire {
     background-size: 55%;
   }
 }
 
 @media(max-width: 960px) and (min-width: 756px){
-  .banner-violaine__title {
+  .banner-victoire__title {
     padding: 30% 0px;
   }
 
-  .banner-violaine {
+  .banner-victoire {
     background-size: 70%;
   }
 }

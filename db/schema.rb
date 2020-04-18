@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 2020_02_22_150726) do
     t.string "company_logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
     t.string "category"
     t.boolean "current"
   end

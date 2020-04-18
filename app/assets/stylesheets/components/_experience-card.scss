@@ -26,9 +26,13 @@
 
 .experience-card {
   color: rgba(0, 0, 0, 0.7);
+
+  ul {
+    padding-inline-start: 1rem;
+  }
 }
 
 .experiences__header {
   color: rgba(0, 0, 0, 0.7);
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid $red;
 }
