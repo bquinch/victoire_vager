@@ -1,0 +1,34 @@
+.experience-card__left__year,
+.experience-card__left {
+  text-align: end;
+}
+
+.experience-card__left img {
+  border-radius: 50%;
+}
+
+.experience-card__left__year {
+
+  p {
+    margin-bottom: .5rem;
+  }
+}
+
+.experience-card__right {
+  h1, p {
+    font-size: 1rem;
+  }
+
+  .experience-card__right__company {
+    font-weight: bolder;
+  }
+}
+
+.experience-card {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.experiences__header {
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid $orange;
+}

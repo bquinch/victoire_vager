@@ -1,0 +1,43 @@
+.navbar-lewagon {
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.bg-orange {
+  background: $orange !important;
+}
+
+.navbar {
+  background: linear-gradient(180deg, $light-gray 0%, $light-gray 65%, rgba(244, 244, 244, 0) 100%);;
+  transition: background .3s;
+}
+
+.navbar .container{
+  justify-content: space-around !important;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('VQ.png') !important;
+}
+
+.navbar-toggler {
+  border-radius: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}
