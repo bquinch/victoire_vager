@@ -9,6 +9,10 @@
   background: $red !important;
 }
 
+.nav-capital {
+  font-family: $banner-font !important;
+}
+
 .navbar {
   background: linear-gradient(180deg, $light-gray 0%, $light-gray 65%, rgba(244, 244, 244, 0) 100%);;
   transition: background .3s;

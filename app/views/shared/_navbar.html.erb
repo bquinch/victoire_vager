@@ -8,16 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <%= link_to "Accueil", "#", class: "nav-link mr-5" %>
+            <%= link_to "#", class: "nav-link mr-5" do %>
+              <span><span class='nav-capital'><strong>A</strong></span>ccueil</span>
+            <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to "À Propos", "#about", class: "nav-link mr-5" %>
+            <%= link_to "#about", class: "nav-link mr-5" do %>
+              <span><span class='nav-capital'><strong>À</strong></span> propos</span>
+            <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to "Expériences", "#experiences", class: "nav-link mr-5" %>
+            <%= link_to "#experiences", class: "nav-link mr-5" do %>
+              <span><span class='nav-capital'><strong>E</strong></span>xpériences</span>
+            <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to "Contact", "#contact", class: "nav-link" %>
+            <%= link_to "#contact", class: "nav-link" do %>
+              <span><span class='nav-capital'><strong>C</strong></span>ontact</span>
+            <% end %>
           </li>
       </ul>
     </div>

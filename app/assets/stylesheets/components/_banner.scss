@@ -18,6 +18,10 @@
 
   h1 {
     font-size: 2rem;
+
+    span {
+      font-family: $banner-font !important;
+    }
   }
 
   p {
