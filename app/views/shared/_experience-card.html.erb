@@ -1,14 +1,14 @@
 <div class="row my-3 experience-card" data-aos="fade-up" data-aos-delay="50">
   <div class="col-3 experience-card__left">
     <div class="experience-card__left__year">
-      <p><%= @experience.start_date.year %> -
-        <% if @experience.current %>
-          Aujourd'hui</p>
-        <% else %>
-          <%= @experience.end_date.year %></p>
-        <% end %>
+      <p><%= "#{I18n.t("date.abbr_month_names")[@experience.start_date.month]} #{@experience.start_date.year}" %> -
+      <% if @experience.current %>
+        Aujourd'hui</p>
+      <% else %>
+        <%= "#{I18n.t("date.abbr_month_names")[@experience.start_date.month]} #{@experience.end_date.year}" %></p>
+      <% end %>
+      <%= image_tag @experience.company_logo_url, alt: "#{@experience.company}-logo", width: 70, height: 70, crop: :fill %>
     </div>
-    <%= image_tag @experience.company_logo_url, alt: "#{@experience.company}-logo", width: 70, height: 70, crop: :fill %>
   </div>
   <div class="col-9 border-left">
     <div class="experience-card__right">
