@@ -19,9 +19,9 @@
       <div class="col-lg-5 col-10 col-sm-6 col-md-4 footer-text border-left px-auto mx-auto">
         <strong>CONTACT</strong>
         <br>
-        Victoire Vager
+        <%= "#{@victoire.first_name} #{@victoire.last_name}" %>
         <br>
-        <em>Chargée de Communucation - Marketing</em>
+        <em><%= @victoire.title %></em>
         <ul class='pl-0'>
           <a href="mailto:victoirevager@gmail.com" class="footer-link"><li><i class="far fa-envelope fa-fw"></i> victoirevager@gmail.com</li></a>
           <a href="tel:+33650741288" class='footer-link'><li><i class="fas fa-mobile-alt fa-fw"></i> 06 64 18 74 70</li></a>

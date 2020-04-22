@@ -6,5 +6,6 @@ class PagesController < ApplicationController
     @skills = Skill.all.order('priority asc')
     @quote = Quote.last
     @message = Message.new
+    @victoire = User.find_by('admin = ?', true)
   end
 end

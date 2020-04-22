@@ -3,8 +3,8 @@
     <div class="banner-victoire-content container d-flex align-items-center justify-content-between">
       <div class="banner-victoire__title" data-aos="fade" data-aos-delay="50">
         <div class="p-3 text-center">
-          <h1><span>V</span>ictoire <strong><span>V</span>ager</strong></h1>
-          <p>Chargée de Communication - Marketing</p>
+          <h1><span><%= @victoire.first_name[0] %></span><%= @victoire.first_name[1..-1] %> <strong><span><%= @victoire.last_name[0] %></span><%= @victoire.last_name[1..-1] %></strong></h1>
+          <p><%= @victoire.title %></p>
         </div>
       </div>
       <div class="citation-victoire text-right" data-aos="fade" data-aos-delay="50">
