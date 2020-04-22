@@ -4,6 +4,10 @@ class Experience < ApplicationRecord
   validates :company_logo_url, url: true
   validate :end_date_after_start_date
 
+  def category_enum
+    ["Travail", "Études", "Bénévolat"]
+  end
+
   private
 
   def end_date_after_start_date

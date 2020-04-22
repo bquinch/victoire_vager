@@ -17,6 +17,44 @@ RailsAdmin.config do |config|
 
   config.included_models = [ "Skill", "Experience", "Quote", "User" ]
 
+  config.model 'Project' do
+    field :category, :enum do
+      enum do
+        ["Travail", "Études", "Bénévolat"]
+      end
+    end
+    field :company
+    field :role
+    field :description
+    field :company_logo_url
+    field :current
+    field :start_date
+    field :end_date
+  end
+
+  config.model 'Skill' do
+    field :name
+    field :category, :enum do
+      enum do
+        ["Communication", "Technologies", "Soft Skills"]
+      end
+    end
+    field :priority
+  end
+
+  config.model 'Quote' do
+    field :description
+    field :author
+  end
+
+  config.model 'User' do
+    exclude_fields_if do
+      type == :datetime
+    end
+
+    exclude_fields :id
+  end
+
   ## == CancanCan ==
   # config.authorize_with :cancancan
 
