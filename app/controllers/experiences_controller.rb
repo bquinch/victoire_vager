@@ -39,6 +39,7 @@ class ExperiencesController < ApplicationController
     params.require('experience').permit(
       :start_date,
       :end_date,
+      :category,
       :company,
       :type,
       :role,

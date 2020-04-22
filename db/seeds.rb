@@ -1,4 +1,6 @@
 Experience.destroy_all
+Skill.destroy_all
+Quote.destroy_all
 
 Experience.create!(
   start_date: Date.new(2019,7,1),
@@ -13,7 +15,7 @@ Experience.create!(
 
 Experience.create!(
   start_date: Date.new(2018,2,1),
-  end_date: Date.new(2019,6,1),
+  end_date: Date.new(2019,7,1),
   current: false,
   company: 'Lush',
   category: 'Travail',
@@ -52,7 +54,7 @@ Experience.create!(
   category: 'Travail',
   role: 'Community Manager',
   description: "Animation de la page Facebook (création de contenus) \nMise en place et suivi de jeux concours (plannings, budgets) \nRédaction de reportings mensuels et hebdomadaires",
-  company_logo_url: 'https://lh3.googleusercontent.com/proxy/HRYWahhdO0SCJRmE3eu0O0cGXYnadSxoUQ3WhJYixEAhv-wo8455WrIQY3xJyhzLCplEiZ7ALkm7GV6yyUkbEEIcI5EDjgup7B_MsDUd0-LMEpElMg7EBHiHWOQ'
+  company_logo_url: 'https://www.marcelww.com/img/share-site.gif'
 )
 
 Experience.create!(
@@ -75,4 +77,140 @@ Experience.create!(
   role: 'Commis de cuisine',
   description: "Poste froid / entrée \nPoste banquetting froid et chaud \nPâtisserie",
   company_logo_url: 'https://www.lhotellerie-restauration.fr/journal/hotellerie/2014-05/img/cafe-paix.jpg'
+)
+
+Skill.create!(
+  name: 'Stratégie Digitale',
+  category: 'Communication',
+  priority: 1
+)
+
+Skill.create!(
+  name: 'Mise en place opérationnelle',
+  category: 'Communication',
+  priority: 2
+)
+
+Skill.create!(
+  name: 'E-reputation',
+  category: 'Communication',
+  priority: 3
+)
+
+Skill.create!(
+  name: 'Social Medias',
+  category: 'Communication',
+  priority: 4
+)
+
+Skill.create!(
+  name: 'Veille',
+  category: 'Communication',
+  priority: 5
+)
+
+Skill.create!(
+  name: 'Planning Stratégique',
+  category: 'Communication',
+  priority: 6
+)
+
+Skill.create!(
+  name: 'TeamBuildings',
+  category: 'Communication',
+  priority: 7
+)
+
+Skill.create!(
+  name: 'Trello',
+  category: 'Technologies',
+  priority: 1
+)
+
+Skill.create!(
+  name: 'Suite Office',
+  category: 'Technologies',
+  priority: 2
+)
+
+Skill.create!(
+  name: 'InDesign',
+  category: 'Technologies',
+  priority: 3
+)
+
+Skill.create!(
+  name: 'Photoshop',
+  category: 'Technologies',
+  priority: 4
+)
+
+Skill.create!(
+  name: 'Premiere Pro',
+  category: 'Technologies',
+  priority: 5
+)
+
+Skill.create!(
+  name: 'WordPress',
+  category: 'Technologies',
+  priority: 6
+)
+
+Skill.create!(
+  name: 'Reaper',
+  category: 'Technologies',
+  priority: 7
+)
+Skill.create!(
+  name: 'Cuisine',
+  category: 'Soft Skills',
+  priority: 1
+)
+
+Skill.create!(
+  name: "Esprit d'équipe",
+  category: 'Soft Skills',
+  priority: 2
+)
+
+Skill.create!(
+  name: "Organisation d'événements",
+  category: 'Soft Skills',
+  priority: 3
+)
+
+Skill.create!(
+  name: 'Chant Lyrique & Jazz',
+  category: 'Soft Skills',
+  priority: 4
+)
+
+Skill.create!(
+  name: 'Burlesque',
+  category: 'Soft Skills',
+  priority: 5
+)
+
+Skill.create!(
+  name: 'Journalisme',
+  category: 'Soft Skills',
+  priority: 6
+)
+
+Skill.create!(
+  name: 'Anglais Bilingue',
+  category: 'Soft Skills',
+  priority: 7
+)
+
+Skill.create!(
+  name: 'Management',
+  category: 'Soft Skills',
+  priority: 8
+)
+
+Quote.create!(
+  description: "La gentillesse c’est apporter aux autres sa force au lieu de leur rappeler leur faiblesse.",
+  author: '',
 )

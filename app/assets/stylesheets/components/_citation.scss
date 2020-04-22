@@ -8,6 +8,10 @@
   font-family: $banner-font;
 }
 
+.citation-victoire {
+  width: 50%;
+}
+
 @media (max-width: 500px) {
   .citation-victoire {
     display: none;

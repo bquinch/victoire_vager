@@ -1,5 +1,7 @@
 class Experience < ApplicationRecord
-  validates :company, :role, :category, :description, presence: true
+  validates :company, :role, :category, :description, :company_logo_url, presence: true
+  validates :category, inclusion: { in: %w[Travail Études Bénévolat]}
+  validates :company_logo_url, url: true
   validate :end_date_after_start_date
 
   private

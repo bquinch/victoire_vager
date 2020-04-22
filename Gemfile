@@ -9,6 +9,8 @@ gem 'puma'
 gem 'rails', '5.2.4'
 gem 'redis'
 gem 'mailgun-ruby', '~> 1.2'
+gem 'rails_admin'
+gem "validate_url"
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'

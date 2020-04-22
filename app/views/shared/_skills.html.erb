@@ -1,3 +1,6 @@
+<% communication = @skills.select { |skill| skill.category == "Communication" } %>
+<% techologie = @skills.select { |skill| skill.category == "Technologies" } %>
+<% soft_skills = @skills.select { |skill| skill.category == "Soft Skills" } %>
 <div class="skills-container">
   <div class="container py-3">
     <div class="text-center p-3 my-3 experiences__header" data-aos="fade-right" data-aos-delay="50">Compétences</div>
@@ -6,40 +9,27 @@
         <div class="skills-card p-4">
           <%= image_tag "team_work.svg", alt: "team_work", width: '100%', class: 'skills-card__image mb-3' %>
           <h1>Communication</h1>
-          <p>Stratégie Digitale</p>
-          <p>Mise en place opérationnelle</p>
-          <p>E-reputation</p>
-          <p>Social Medias</p>
-          <p>Veille</p>
-          <p>Planning Stratégique</p>
-          <p>TeamBuildings</p>
+          <% communication.each do |skill| %>
+            <p><%= skill.name %></p>
+          <% end %>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 col-10">
         <div class="skills-card p-4">
           <%= image_tag "team_connect.svg", alt: "team_work", width: '100%', class: 'skills-card__image mb-3' %>
           <h1>Technologies</h1>
-          <p>Trello</p>
-          <p>Suite Office</p>
-          <p>InDesign</p>
-          <p>Photoshop</p>
-          <p>Premiere Pro</p>
-          <p>WordPress</p>
-          <p>Reaper</p>
+          <% techologie.each do |skill| %>
+            <p><%= skill.name %></p>
+          <% end %>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 col-10">
         <div class="skills-card p-4">
           <%= image_tag "gallery.svg", alt: "team_work", width: '100%', class: 'skills-card__image mb-3' %>
           <h1>Soft Skills</h1>
-          <p>Cuisine</p>
-          <p>Esprit d'équipe</p>
-          <p>Organisation d'Événements</p>
-          <p>Chant Lyrique & Jazz</p>
-          <p>Burlesque</p>
-          <p>Journalisme</p>
-          <p>Bilingue Anglais</p>
-          <p>Management</p>
+          <% soft_skills.each do |skill| %>
+            <p><%= skill.name %></p>
+          <% end %>
         </div>
       </div>
     </div>

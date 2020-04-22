@@ -9,10 +9,12 @@
       </div>
       <div class="citation-victoire text-right" data-aos="fade" data-aos-delay="50">
         <div class="citation-texte">
-          <p class='mb-0'>Fais de ta vie un rêve, et d'un rêve, une réalité.</p>
+          <% @quote.description.split("\n").each do |description| %>
+            <p class='mb-0'><%= description %></p>
+          <% end %>
         </div>
         <div class="citation-auteur">
-          <p class='mb-0'>Antoine de Saint-Exupéry</p>
+          <p class='mb-0'><% if @quote.author %><%= @quote.author %><% end %></p>
         </div>
       </div>
     </div>
